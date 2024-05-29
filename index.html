@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanjim Bin Noor - Data Analyst</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        .about-me, .projects, .contact, .blogs {
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: #4CAF50;
-        }
-        .project-item {
-            background-color: #e0e0e0;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
@@ -68,6 +14,7 @@
     <nav>
         <a href="#about-me">About Me</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact Info</a>
         <a href="#blogs">Blogs</a>
     </nav>
@@ -80,21 +27,29 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="project-item">
-            <h3>AbroadMates</h3>
-            <p>A mentorship platform for study abroad aspirants. Worked on strategic planning and management.</p>
-        </div>
-        <div class="project-item">
             <h3>TIU Data Science & Analytics</h3>
             <p>Leading initiatives to empower students with essential data skills as the Vice President.</p>
         </div>
         <!-- Add more projects as needed -->
     </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-item">
+            <p>Tableau</p>
+        </div>
+        <div class="skill-item">
+            <p>Microsoft Excel</p>
+        </div>
+        <div class="skill-item">
+            <p>Statistical Data Analysis</p>
+        </div>
+        <!-- Add more skills as needed -->
+    </section>
     <section id="contact" class="contact">
         <h2>Contact Info</h2>
         <p>Email: <a href="mailto:nafim07@gmail.com">nafim07@gmail.com</a></p>
         <p>Phone: (+81)07047431011</p>
-        <p>Address: 〒 350-1101, 2114-3, Matoba, Kawagoe City, Saitama. Wakakusa Heights.</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yasinrahat/" target="_blank">linkedin.com/in/yasinrahat</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tanjim-bin-noor-b12165143/" target="_blank">linkedin.com/in/tanjim-bin-noor-b12165143</a></p>
     </section>
     <section id="blogs" class="blogs">
         <h2>Blogs</h2>
